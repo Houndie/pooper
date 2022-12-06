@@ -1,8 +1,28 @@
 [package]
-name = "reporter"
+name = "pooper"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+reqwest = {version = "0.11.12", features=["cookies", "json"]}
+tokio = {version = "1.21.2", features=["full"]}
+chrono = {version = "0.4", features=["serde"]}
+serde = {version = "1.0"}
+serde_json = {version = "1.0"}
+futures = {version = "0.3"}
+lazy_static = {version = "1.4"}
+axum = {version = "0.5.6"}
+hyper = {version = "0.14.20"}
+toml = {version = "0.5.9"}
+thiserror = {version = "1.0.37"}
+log = {version = "0.4"}
+env_logger = {version = "0.9.1"}
+http = "0.2.8"
+openssl = "0.10.42"
+base64 = "0.13.1"
+
+[dev-dependencies]
+faux = {version = "0.1.9"}
+tower = {version = "0.4.13"}
